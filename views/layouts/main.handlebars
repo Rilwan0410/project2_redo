@@ -6,10 +6,19 @@
     <title>{{pageTitle}} - Holey Soley</title>
     {{!-- <link rel="stylesheet" href="../../public/css/tailwind.css"> --}}
      <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="css/main.css">
     
 </head>
 <body>
-    <h1 class="container mx-auto px-4">Holey Soley</h1>
+<header class="bg-black p-[10px]  items-center flex justify-between text-white shadow-md shadow-[rgba(0,0,0,0.4)]">
+
+    <h1 class="text-[2rem] text-transform uppercase font-[500]">Holey Soley</h1>
+    <ul class="flex gap-[15px] text-[1.3rem] pr-[10px]">
+        <li class="border-b-[1px] cursor-pointer">Profile</li>
+        <li class="border-b-[1px] cursor-pointer">Log In</li>
+        <li class="border-b-[1px] cursor-pointer">Log Out</li>
+    </ul>
+</header>
     <main>
         {{{body}}}
     </main>
