@@ -1,25 +1,40 @@
 
-  <section class="my-[20px] pb-[50px]">
+  <section class="my-[20px] pb-[50px] flex flex-col justify-center items-center">
     {{#if user}}
-    <h1 class="font-bold text-[3rem]">{{uppercaseFirstLetter user.firstname}}'s Dashboard</h1>
+    <h1 class="font-bold text-[3rem] mb-[20px]">{{uppercaseFirstLetter user.firstname}}'s Dashboard</h1>
 
 
     <div class="grid grid-cols-4 gap-x-[40px] gap-y-[20px]">
-        <div class="image-1 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-2 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-3 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-4 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-5 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-6 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-7 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-8 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-9 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-10 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-11 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
-        <div class="image-12 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-1 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-2 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-3 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-4 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-5 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-6 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-7 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-8 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-9 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-10 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-11 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+        <div class="image-12 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
+
+        {{!-- <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-1  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-2  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-3  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-4  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-5  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-6  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-7  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-8  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-9  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-10  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-11  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-12  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div> --}}
     </div>
     {{else}}
     <h1 class="font-bold text-[3rem]">Dashboard</h1>
+
+    <h2 class="text-center text-[3rem] mt-[200px]">Log In to see sneakers...</h2>
     {{/if}}
 
 

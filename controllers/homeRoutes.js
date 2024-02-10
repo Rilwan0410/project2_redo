@@ -3,15 +3,13 @@ const { where } = require('sequelize');
 const { User } = require('../models');
 const bcrypt = require('bcrypt');
 
-
-
 router.get('/', async (req, res) => {
   const uppercaseFirstLetter = (word) => {
     const firstLetterGone = word.slice(1);
     console.log(firstLetterGone);
     return word[0].toUpperCase() + firstLetterGone;
   };
-  
+
   const sessionLive = req.session.loggedIn;
   if (req.session.user_id) {
     const user = await User.findOne({
@@ -66,12 +64,16 @@ router.get('/login', (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
+  let errors = [];
   const { username, password } = req.body;
   const user = await User.findOne({ where: { username }, raw: true });
   console.log(user);
-  let validPassword = await bcrypt.compare(password, user.password);
-  console.log(validPassword);
-  if (validPassword) {
+  let validPassword;
+  if (user) {
+    validPassword = await bcrypt.compare(password, user.password);
+  }
+
+  if (user && validPassword) {
     req.session.save(() => {
       req.session.user_id = user.id;
       req.session.loggedIn = true;
@@ -79,7 +81,8 @@ router.post('/login', async (req, res) => {
       res.redirect('/profile');
     });
   } else {
-    return res.json({ msg: 'failed to log in' });
+    errors.push('username or password incorrect, try again.');
+    res.render('login', { errors });
   }
   // res.render(req.body)
   // return res.render('homepage', {});
@@ -87,7 +90,7 @@ router.post('/login', async (req, res) => {
 
 router.get('/logout', (req, res) => {
   req.session.destroy(() => {
-    res.redirect('/login');
+    res.redirect('/');
   });
 });
 router.get('/homepage', async (req, res) => {

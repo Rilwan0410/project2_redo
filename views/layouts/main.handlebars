@@ -14,11 +14,14 @@
 
 <a href="/">    <h1 class="text-[2rem] text-transform uppercase font-[500]">Holey Soley</h1></a>
     <ul class="flex gap-[15px] text-[1.3rem] pr-[10px]">
+        <a href="/"><li class="border-b-[1px] cursor-pointer">Home</li></a>
         <a href="/profile"><li class="border-b-[1px] cursor-pointer">Profile</li></a>
         {{#unless sessionLive}}
         <a href="/login"><li class="border-b-[1px] cursor-pointer">Log In</li></a>
         {{/unless}}
+        {{#if sessionLive}}
         <a href="/logout"><li class="border-b-[1px] cursor-pointer">Log Out</li></a>
+        {{/if}}
     </ul>
 </header>
     <main>
