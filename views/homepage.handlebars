@@ -1,31 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holey Soley</title>
-</head>
-<body>
-    <header>
-        <div id="profileButton" >
-            <a href="/profile" class="text-green-400">Profile</a>
-        </div>
-    </header>
-    <main>
-        <section id="featuredSneakers">
-            <h2>Featured Sneakers</h2>
-            {{#each featuredSneakers}}
-                <div class="sneakerCard">
-                    <img src="{{image}}" alt="{{name}}">
-                    <p>{{name}}</p>
-                    <p>${{price}}</p>
-                    <button>Buy Now</button>
-                </div>
-            {{/each}}
-        </section>
-    </main>
-    <footer>
 
-    </footer>
-</body>
-</html>
+  <section class="my-[20px] pb-[50px]">
+    {{#if user}}
+    <h1 class="font-bold text-[3rem]">{{uppercaseFirstLetter user.firstname}}'s Dashboard</h1>
+
+
+    <div class="grid grid-cols-4 gap-x-[40px] gap-y-[20px]">
+        <div class="image-1 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-2 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-3 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-4 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-5 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-6 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-7 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-8 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-9 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-10 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-11 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+        <div class="image-12 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[300px] h-[200px] rounded-lg"></div>
+    </div>
+    {{else}}
+    <h1 class="font-bold text-[3rem]">Dashboard</h1>
+    {{/if}}
+
+
+  </section>

@@ -3,24 +3,39 @@ const { where } = require('sequelize');
 const { User } = require('../models');
 const bcrypt = require('bcrypt');
 
+
+
 router.get('/', async (req, res) => {
-  const sessionLive = req.session.loggedIn
-  console.log(req.session);
-  res.render('homepage', {sessionLive});
+  const uppercaseFirstLetter = (word) => {
+    const firstLetterGone = word.slice(1);
+    console.log(firstLetterGone);
+    return word[0].toUpperCase() + firstLetterGone;
+  };
+  
+  const sessionLive = req.session.loggedIn;
+  if (req.session.user_id) {
+    const user = await User.findOne({
+      where: { id: req.session.user_id },
+      raw: true,
+    });
+    res.render('homepage', { sessionLive, user });
+  }
+
+  res.render('homepage', { sessionLive, helpers: uppercaseFirstLetter });
 });
 
 router.get('/profile', async (req, res) => {
   if (!req.session.loggedIn) {
     return res.redirect('/login');
   }
-  const sessionLive  = req.session.loggedIn
+  const sessionLive = req.session.loggedIn;
   console.log(req.session);
   const user = await User.findOne({
     where: { id: req.session.user_id },
     raw: true,
   });
   console.log(user);
-  res.render('profile', { user , sessionLive});
+  res.render('profile', { user, sessionLive });
 });
 
 router.get('/signup', (req, res) => {
