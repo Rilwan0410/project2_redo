@@ -1,36 +1,34 @@
 <section
-  id='signupForm'
   class='border-[2px] w-[800px] mt-[150px] flex p-[20px] flex-col justify-center items-center'
 >
-  <h2 class='text-[2.5rem]'>Sign Up</h2>
-  <form id='signupForm' class="w-full flex flex-col" action='/signup' method='post'>
+  <h2 class='text-[2.5rem]'>Login</h2>
+  <form class='w-full flex flex-col' action='/login' method='POST'>
 
-    <div class='form-group mb-[10px] '>
+    <div class='form-group mb-[10px]'>
       <label class='block font-bold' for='username'>Username</label>
       <input
-        class='border-[1px] p-[5px] w-full                  '
+        class='border-[1px] p-[5px] w-full'
         type='text'
-        id='username'
         name='username'
         required
       />
     </div>
-
-
-
 
     <div class='form-group mb-[10px]'>
       <label class='block font-bold' for='password'>Password</label>
       <input
         class='border-[1px] w-full p-[5px] w-full'
         type='password'
-        id='password'
         name='password'
         required
       />
     </div>
 
-    <button class='bg-black text-white w-full p-[10px] rounded-md my-[15px]' type='submit'>Sign Up</button>
-    <p class="m-auto">Already have an account? <a href='/login' class="font-bold underline">Login</a></p>
+    <button
+      class='bg-black text-white w-full p-[10px] rounded-md my-[15px]'
+      type='submit'
+    >Login</button>
+    <p class='m-auto'>Don't have an account?
+      <a href='/signup' class='font-bold underline'>Sign up</a></p>
   </form>
 </section>

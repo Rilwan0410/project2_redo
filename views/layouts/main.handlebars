@@ -12,11 +12,13 @@
 <bod class="grid place-items-center">
 <header class="bg-black p-[10px] w-full  items-center flex justify-between text-white shadow-md shadow-[rgba(0,0,0,0.4)]">
 
-    <h1 class="text-[2rem] text-transform uppercase font-[500]">Holey Soley</h1>
+<a href="/">    <h1 class="text-[2rem] text-transform uppercase font-[500]">Holey Soley</h1></a>
     <ul class="flex gap-[15px] text-[1.3rem] pr-[10px]">
         <a href="/profile"><li class="border-b-[1px] cursor-pointer">Profile</li></a>
-        <li class="border-b-[1px] cursor-pointer">Log In</li>
-        <li class="border-b-[1px] cursor-pointer">Log Out</li>
+        {{#unless sessionLive}}
+        <a href="/login"><li class="border-b-[1px] cursor-pointer">Log In</li></a>
+        {{/unless}}
+        <a href="/logout"><li class="border-b-[1px] cursor-pointer">Log Out</li></a>
     </ul>
 </header>
     <main>
