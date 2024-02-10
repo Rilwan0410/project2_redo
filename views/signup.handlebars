@@ -1,47 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Holey Soley</title>
-</head>
+<section
+  id='signupForm'
+  class='border-[2px] w-[800px] mt-[50px] flex p-[20px] flex-col justify-center items-center'
+>
+  <h2 class='text-[2.5rem]'>Sign Up</h2>
+  <form id='signupForm' class="w-full flex flex-col" action='/signup' method='post'>
 
-<style>
-    label, button{
-        display:block;
-    }
-    .signup_button{
-margin-top:10px;
-    }
-</style>
-<body>
-    <header>
-        <h1>Sneaker Marketplace</h1>
-    </header>
-    <main>
-        <section id="signupForm">
-            <h2>Sign Up</h2>
-            <form id="signupForm" action="/signup" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+    <div class='form-group mb-[10px] '>
+      <label class='block font-bold' for='username'>Username</label>
+      <input
+        class='border-[1px] p-[5px] w-full                  '
+        type='text'
+        id='username'
+        name='username'
+        required
+      />
+    </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <div class='form-group mb-[10px]'>
+      <label class='block font-bold' for='email'>Email</label>
+      <input
+        class='border-[1px] w-full p-[5px] w-full'
+        type='email'
+        id='email'
+        name='email'
+        required
+      />
+    </div>
 
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
+    <div class='form-group mb-[10px]'>
+      <label class='block font-bold' for='firstName'>First Name</label>
+      <input
+        class='border-[1px] w-full p-[5px] w-full'
+        type='text'
+        id='firstName'
+        name='firstName'
+        required
+      />
+    </div>
 
-                <label for="email">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required>
+    <div class='form-group mb-[10px]'>
+      <label class='block font-bold' for='email'>Last Name</label>
+      <input
+        class='border-[1px] w-full p-[5px] w-full'
+        type='text'
+        id='lastName'
+        name='lastName'
+        required
+      />
+    </div>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button  class="signup_button"type="submit">Sign Up</a></button>
-            </form>
-            <p>Already have an account? <a href="/login">Login</a></p>
-        </section>
-    </main>
-    <footer>
-    </footer>
-</body>
-</html>
+    <div class='form-group mb-[10px]'>
+      <label class='block font-bold' for='password'>Password</label>
+      <input
+        class='border-[1px] w-full p-[5px] w-full'
+        type='password'
+        id='password'
+        name='password'
+        required
+      />
+    </div>
+
+    <button class='bg-black text-white w-full p-[10px] rounded-md my-[15px]' type='submit'>Sign Up</button>
+    <p class="m-auto">Already have an account? <a href='/login' class="font-bold underline">Login</a></p>
+  </form>
+</section>
