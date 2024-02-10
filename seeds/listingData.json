@@ -1,0 +1,52 @@
+[
+  {
+    "item name": "Nike Air Yeezy 2 'Red October'",
+    "description": "Highly coveted Nike collaboration with Kanye West, featuring an all-red colorway and unique design.",
+    "pricing": 5000.00
+  },
+  {
+    "item name": "Adidas Originals NMD Pharrell Williams 'Human Race'",
+    "description": "Rare Adidas NMD collaboration with Pharrell Williams, known for its vibrant colors and 'Human Race' embroidery.",
+    "pricing": 2500.00
+  },
+  {
+    "item name": "Air Jordan 1 Retro High 'Off-White'",
+    "description": "Limited edition collaboration between Nike and Off-White, featuring deconstructed design elements and iconic Off-White branding.",
+    "pricing": 3000.00
+  },
+  {
+    "item name": "Puma RS-0 'Sonic'",
+    "description": "Exclusive Puma sneakers inspired by the Sonic the Hedgehog video game, with unique colorway and branding.",
+    "pricing": 1500.00
+  },
+  {
+    "item name": "Converse Chuck Taylor All Star x Comme des Garçons PLAY",
+    "description": "Collaborative Converse sneakers with Comme des Garçons PLAY, known for its heart logo and minimalist design.",
+    "pricing": 800.00
+  },
+  {
+    "item name": "Reebok Instapump Fury OG 'Bape x Mita Sneakers'",
+    "description": "Limited edition collaboration between Reebok, Bape, and Mita Sneakers, featuring a distinctive camo pattern.",
+    "pricing": 1800.00
+  },
+  {
+    "item name": "Vans Vault x WTAPS OG Era LX 'Bones'",
+    "description": "Exclusive Vans collaboration with WTAPS, featuring the 'Bones' design and premium materials.",
+    "pricing": 1200.00
+  },
+  {
+    "item name": "ASICS GEL-Lyte III 'Kithstrike'",
+    "description": "Rare ASICS GEL-Lyte III released as part of a Kith exclusive 'Kithstrike' collection.",
+    "pricing": 1600.00
+  },
+  {
+    "item name": "Under Armour Curry 1 'MVP'",
+    "description": "Limited edition Under Armour sneakers celebrating Stephen Curry's MVP season, with special colorway and details.",
+    "pricing": 2200.00
+  },
+  {
+    "item name": "Skechers Energy Lights",
+    "description": "Unique Skechers sneakers with light-up technology, adding a playful and distinctive touch.",
+    "pricing": 120.00
+  }
+]

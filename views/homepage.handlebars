@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holey Soley</title>
+</head>
+<body>
+    <header>
+        <div id="profileButton">
+            <a href="/profile">Profile</a>
+        </div>
+    </header>
+    <main>
+        <section id="featuredSneakers">
+            <h2>Featured Sneakers</h2>
+            {{#each featuredSneakers}}
+                <div class="sneakerCard">
+                    <img src="{{image}}" alt="{{name}}">
+                    <p>{{name}}</p>
+                    <p>${{price}}</p>
+                    <button>Buy Now</button>
+                </div>
+            {{/each}}
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
