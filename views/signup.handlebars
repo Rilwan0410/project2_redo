@@ -5,6 +5,28 @@
   <h2 class='text-[2.5rem]'>Sign Up</h2>
   <form id='signupForm' class="w-full flex flex-col" action='/signup' method='post'>
 
+    <div class='form-group mb-[10px]'>
+      <label class='block font-bold' for='firstName'>First Name</label>
+      <input
+        class='border-[1px] w-full p-[5px] w-full'
+        type='text'
+        id='firstName'
+        name='firstName'
+        required
+      />
+    </div>
+
+    <div class='form-group mb-[10px]'>
+      <label class='block font-bold' for='email'>Last Name</label>
+      <input
+        class='border-[1px] w-full p-[5px] w-full'
+        type='text'
+        id='lastName'
+        name='lastName'
+        required
+      />
+    </div>
+
     <div class='form-group mb-[10px] '>
       <label class='block font-bold' for='username'>Username</label>
       <input
@@ -27,27 +49,6 @@
       />
     </div>
 
-    <div class='form-group mb-[10px]'>
-      <label class='block font-bold' for='firstName'>First Name</label>
-      <input
-        class='border-[1px] w-full p-[5px] w-full'
-        type='text'
-        id='firstName'
-        name='firstName'
-        required
-      />
-    </div>
-
-    <div class='form-group mb-[10px]'>
-      <label class='block font-bold' for='email'>Last Name</label>
-      <input
-        class='border-[1px] w-full p-[5px] w-full'
-        type='text'
-        id='lastName'
-        name='lastName'
-        required
-      />
-    </div>
 
     <div class='form-group mb-[10px]'>
       <label class='block font-bold' for='password'>Password</label>

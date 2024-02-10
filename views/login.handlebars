@@ -1,8 +1,8 @@
 <section
   id='signupForm'
-  class='border-[2px] w-[800px] mt-[50px] flex p-[20px] flex-col justify-center items-center'
+  class='border-[2px] w-[800px] mt-[150px] flex p-[20px] flex-col justify-center items-center'
 >
-  <h2 class='text-[2.5rem]'>Login</h2>
+  <h2 class='text-[2.5rem]'>Sign Up</h2>
   <form id='signupForm' class="w-full flex flex-col" action='/signup' method='post'>
 
     <div class='form-group mb-[10px] '>
@@ -16,38 +16,8 @@
       />
     </div>
 
-    <div class='form-group mb-[10px]'>
-      <label class='block font-bold' for='email'>Email</label>
-      <input
-        class='border-[1px] w-full p-[5px] w-full'
-        type='email'
-        id='email'
-        name='email'
-        required
-      />
-    </div>
 
-    <div class='form-group mb-[10px]'>
-      <label class='block font-bold' for='firstName'>First Name</label>
-      <input
-        class='border-[1px] w-full p-[5px] w-full'
-        type='text'
-        id='firstName'
-        name='firstName'
-        required
-      />
-    </div>
 
-    <div class='form-group mb-[10px]'>
-      <label class='block font-bold' for='email'>Last Name</label>
-      <input
-        class='border-[1px] w-full p-[5px] w-full'
-        type='text'
-        id='lastName'
-        name='lastName'
-        required
-      />
-    </div>
 
     <div class='form-group mb-[10px]'>
       <label class='block font-bold' for='password'>Password</label>
@@ -60,7 +30,7 @@
       />
     </div>
 
-    <button class='bg-black text-white w-full p-[10px] rounded-md my-[15px]' type='submit'>Login</button>
-    <p class="m-auto">Dont't have an account? <a href='/signup' class="font-bold underline">Sign Up</a></p>
+    <button class='bg-black text-white w-full p-[10px] rounded-md my-[15px]' type='submit'>Sign Up</button>
+    <p class="m-auto">Already have an account? <a href='/login' class="font-bold underline">Login</a></p>
   </form>
 </section>
