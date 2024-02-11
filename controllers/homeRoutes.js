@@ -16,10 +16,14 @@ router.get('/', async (req, res) => {
       where: { id: req.session.user_id },
       raw: true,
     });
-    res.render('homepage', { sessionLive, user, helpers: uppercaseFirstLetter });
+    return res.render('homepage', {
+      sessionLive,
+      user,
+      helpers: uppercaseFirstLetter,
+    });
   }
 
-  res.render('homepage', { sessionLive });
+  res.render('homepage', );
 });
 
 router.get('/profile', async (req, res) => {
