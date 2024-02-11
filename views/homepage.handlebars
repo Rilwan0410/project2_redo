@@ -1,24 +1,60 @@
+<section class='my-[20px] pb-[50px] flex flex-col justify-center items-center'>
+  {{#if user}}
+    <h1 class='font-bold text-[3rem] mb-[20px]'>{{uppercaseFirstLetter
+        user.firstname
+      }}'s Dashboard</h1>
 
-  <section class="my-[20px] pb-[50px] flex flex-col justify-center items-center">
-    {{#if user}}
-    <h1 class="font-bold text-[3rem] mb-[20px]">{{uppercaseFirstLetter user.firstname}}'s Dashboard</h1>
+    <div class='grid grid-cols-4 gap-x-[40px] gap-y-[20px]'>
+      <img
+        src='https://cdn.sanity.io/images/d6wcctii/production/0daea25f31e10f6287400264dfd01f44f1498ae4-1070x760.png?w=1200&q=80&fit=clip&auto=format'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://i.insider.com/63fd0477b8468e001896b2e4?width=700'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://sneakernews.com/wp-content/uploads/2023/07/nike-air-foamposite-one-metallic-red-DZ2545-600-store-list-1.jpg'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://www.si.com/.image/t_share/MTcwMzExMzEwNTc0MTAxODM5/lebron-dunk.jpg'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://cdn.media.amplience.net/i/hibbett/aj1-unc-blog-1'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://cdn.sanity.io/images/d6wcctii/production/6950d126f51fe470a0491cd10e21dd93e5078ab6-1070x760.png?w=1200&q=80&fit=clip&auto=format'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://img.buzzfeed.com/buzzfeed-static/complex/images/Y19jcm9wLGhfMTEyMyx3XzE5ODUseF8xNSx5XzU1Mg==/y5cvvxrprler5zyqhgpx/grateful-dead-nike-sb-dunk-low-orange-cj5378-800-5.jpg'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://legitgrails.com/cdn/shop/articles/7577150cfc0b7dea83d9b4418e24dc15_1200x1200.jpg?v=1596663190'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://sneakernews.com/wp-content/uploads/2016/06/light-grey-yeezy-boost-750-release-info-2.jpg'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://sneakernews.com/wp-content/uploads/2019/08/yeezy-700-waverunner-release-info.jpg?w=780&h=547&crop=1'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://i.ebayimg.com/images/g/ctwAAOSwTNljojjM/s-l1600.jpg'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
+      <img
+        src='https://i.ebayimg.com/images/g/2-wAAOSwx0Bh1y9P/s-l1200.jpg'
+        class='object-cover shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg'
+      />
 
-
-    <div class="grid grid-cols-4 gap-x-[40px] gap-y-[20px]">
-        <div class="image-1 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-2 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-3 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-4 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-5 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-6 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-7 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-8 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-9 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-10 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-11 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-        <div class="image-12 shadow-md shadow-[rgba(0,0,0,0.3)] hover:scale-[1.05] transition duration-1000 bg-black w-[320px] h-[200px] rounded-lg"></div>
-
-        {{!-- <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-1  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
+      {{! <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-1  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
         <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-2  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
         <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-3  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
         <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-4  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
@@ -29,13 +65,12 @@
         <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-9  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
         <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-10  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
         <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-11  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div>
-        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-12  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div> --}}
+        <div class="overflow-hidden rounded-md shadow-md shadow-[rgba(0,0,0,0.3)]"><div class="image-12  hover:scale-[1.1] transition duration-1000 bg-black w-[320px] h-[200px] "></div></div> }}
     </div>
-    {{else}}
-    <h1 class="font-bold text-[3rem]">Dashboard</h1>
+  {{else}}
+    <h1 class='font-bold text-[3rem]'>Dashboard</h1>
 
-    <h2 class="text-center text-[3rem] mt-[200px]">Log In to see sneakers...</h2>
-    {{/if}}
+    <h2 class='text-center text-[3rem] mt-[200px]'>Log In to see sneakers...</h2>
+  {{/if}}
 
-
-  </section>
+</section>
