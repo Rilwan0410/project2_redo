@@ -3,13 +3,13 @@ const { where } = require('sequelize');
 const { User } = require('../models');
 const bcrypt = require('bcrypt');
 
-router.get('/', async (req, res) => {
-  const uppercaseFirstLetter = (word) => {
-    const firstLetterGone = word.slice(1);
-    console.log(firstLetterGone);
-    return word[0].toUpperCase() + firstLetterGone;
-  };
+const uppercaseFirstLetter = (word) => {
+  const firstLetterGone = word.slice(1);
+  console.log(firstLetterGone);
+  return word[0].toUpperCase() + firstLetterGone;
+};
 
+router.get('/', async (req, res) => {
   const sessionLive = req.session.loggedIn;
   if (req.session.user_id) {
     const user = await User.findOne({
