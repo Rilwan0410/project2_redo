@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
 
   res.render('homepage', );
 });
-
+ 
 router.get('/profile', async (req, res) => {
   if (!req.session.loggedIn) {
     return res.redirect('/login');
