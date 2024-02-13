@@ -23,9 +23,9 @@ router.get('/', async (req, res) => {
     });
   }
 
-  res.render('homepage', );
+  res.render('homepage');
 });
- 
+
 router.get('/profile', async (req, res) => {
   if (!req.session.loggedIn) {
     return res.redirect('/login');
@@ -49,9 +49,8 @@ router.post('/signup', async (req, res) => {
 
   const hashedPassword = await bcrypt.hash(password, 10);
 
-  console.log(hashedPassword);
 
-  const user = await User.create({
+  await User.create({
     firstname: req.body.firstname,
     lastname: req.body.lastname,
     username,
@@ -60,7 +59,7 @@ router.post('/signup', async (req, res) => {
   });
 
   // res.render('signup', {});
-  return es.redirect('/login');
+  return res.redirect('/login');
 });
 
 router.get('/login', (req, res) => {
@@ -94,7 +93,7 @@ router.post('/login', async (req, res) => {
 
 router.get('/logout', (req, res) => {
   req.session.destroy(() => {
-   return  res.redirect('/');
+    return res.redirect('/');
   });
 });
 router.get('/homepage', async (req, res) => {
