@@ -37,11 +37,11 @@ router.get('/profile', async (req, res) => {
     raw: true,
   });
   console.log(user);
-  res.render('profile', { user, sessionLive });
+  return res.render('profile', { user, sessionLive });
 });
 
 router.get('/signup', (req, res) => {
-  res.render('signup', {});
+  return res.render('signup', {});
 });
 
 router.post('/signup', async (req, res) => {
@@ -60,7 +60,7 @@ router.post('/signup', async (req, res) => {
   });
 
   // res.render('signup', {});
-  res.redirect('/login');
+  return es.redirect('/login');
 });
 
 router.get('/login', (req, res) => {
@@ -82,11 +82,11 @@ router.post('/login', async (req, res) => {
       req.session.user_id = user.id;
       req.session.loggedIn = true;
       console.log('successfully logged in');
-      res.redirect('/profile');
+      return res.redirect('/profile');
     });
   } else {
     errors.push('username or password incorrect, try again.');
-    res.render('login', { errors });
+    return res.render('login', { errors });
   }
   // res.render(req.body)
   // return res.render('homepage', {});
@@ -94,11 +94,11 @@ router.post('/login', async (req, res) => {
 
 router.get('/logout', (req, res) => {
   req.session.destroy(() => {
-    res.redirect('/');
+   return  res.redirect('/');
   });
 });
 router.get('/homepage', async (req, res) => {
-  res.render('homepage');
+  return res.render('homepage');
 });
 
 module.exports = router;
